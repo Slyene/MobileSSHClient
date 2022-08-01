@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MobileSSHClient.Views.ConnectionPage"
+            Title="Connection"
+            xmlns:viewmodels="clr-namespace:MobileSSHClient.ViewModels"
+            xmlns:models="clr-namespace:MobileSSHClient.Models"
+            xmlns:views="clr-namespace:MobileSSHClient.Views"
+            x:DataType="viewmodels:ConnectionViewModel">
+    <TabbedPage.BindingContext>
+        <viewmodels:ConnectionViewModel />
+    </TabbedPage.BindingContext>
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Disconnect" Command="{Binding DisconnectCommand}" />
+    </TabbedPage.ToolbarItems>
+    <views:ShellPage BindingContext="{Binding ShellViewModel}" />
+    <views:SnippetsPage BindingContext="{Binding SnippetsViewModel}" />
+</TabbedPage>

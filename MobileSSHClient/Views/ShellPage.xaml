@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileSSHClient.Views.ShellPage"
+             Title="Shell"
+             xmlns:viewmodels="clr-namespace:MobileSSHClient.ViewModels"
+             x:DataType="viewmodels:ShellViewModel"
+             xmlns:t="clr-namespace:VtNetCore.VirtualTerminal;assembly=VtNetCore">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <Editor IsReadOnly="True" Text="{Binding Output}"
+					BackgroundColor="Black"
+                    TextColor="White"
+                    IsVisible="True"
+                    CharacterSpacing="1"
+                    FontFamily="Consolas"
+                    FontSize="Small"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2" 
+                    Margin="0"
+                    InputTransparent="False"
+                    IsSpellCheckEnabled="False" />
+            <Entry x:Name="CommandEntry" ReturnType="Default" Grid.Row="1" Text="{Binding Input}" IsSpellCheckEnabled="False" />
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Ok"
+                    Margin="0, 0, 5, 5"
+                    Command="{Binding RunCommandInShell}" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

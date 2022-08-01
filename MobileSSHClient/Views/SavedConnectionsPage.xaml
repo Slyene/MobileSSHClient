@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileSSHClient.Views.SavedConnectionsPage"
+             Title="Connections"
+             xmlns:viewmodels="clr-namespace:MobileSSHClient.ViewModels"
+             xmlns:models="clr-namespace:MobileSSHClient.Models"
+             x:DataType="viewmodels:SavedConnectionsViewModel">
+
+    <ContentPage.BindingContext>
+        <viewmodels:SavedConnectionsViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddConnectionCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <CollectionView ItemsSource="{Binding Connections}"
+                    SelectionMode="Single"
+                    SelectedItem="{Binding SelectedConnection}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="5">
+                    <Frame HasShadow="True" CornerRadius="10">
+                        <StackLayout x:DataType="models:Connection">
+                            <Label Text="Ip address"  
+                            FontSize="12" 
+                            TextColor="Gray" />
+                            <Label Text="{Binding Ip}" 
+                            LineBreakMode="TailTruncation" 
+                            FontSize="16" 
+                            TextColor="Black" />
+                            <!--<Label Text="{Binding Id}" 
+                            LineBreakMode="TailTruncation" 
+                            FontSize="16" 
+                            TextColor="Black" />-->
+                            <Label Text="Username"  
+                            FontSize="12" 
+                            TextColor="Gray" />
+                            <Label Text="{Binding Username}" 
+                            LineBreakMode="TailTruncation" 
+                            FontSize="16" 
+                            TextColor="Black"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.EmptyView>
+            <StackLayout>
+                <Label HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Text="add a new connection by clicking the 'Add' button"
+                       TextColor="Gray" />
+            </StackLayout>
+        </CollectionView.EmptyView>
+    </CollectionView>
+</ContentPage>

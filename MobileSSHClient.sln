@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSSHClient.Android", "MobileSSHClient.Android\MobileSSHClient.Android.csproj", "{F45DA581-4F13-401E-AFC9-73F3A861B253}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileSSHClient", "MobileSSHClient\MobileSSHClient.csproj", "{D3129EAA-F7CD-4506-A654-14CBDC114189}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|x64.ActiveCfg = Release|x64
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|x64.Build.0 = Release|x64
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Debug|x64.Deploy.0 = Release|x64
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|x64.ActiveCfg = Release|x64
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|x64.Build.0 = Release|x64
+		{F45DA581-4F13-401E-AFC9-73F3A861B253}.Release|x64.Deploy.0 = Release|x64
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Debug|x64.ActiveCfg = Release|x64
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Debug|x64.Build.0 = Release|x64
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Release|x64.ActiveCfg = Release|x64
+		{D3129EAA-F7CD-4506-A654-14CBDC114189}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {255A9A4C-364F-4B59-88C5-0B41C856E777}
+	EndGlobalSection
+EndGlobal
